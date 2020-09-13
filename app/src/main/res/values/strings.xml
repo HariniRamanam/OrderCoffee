@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Order Coffee</string>
+    <string name="coffee_image">Coffee Image</string>
+    <string name="_0_cups_of_coffee">0 cups of coffee</string>
+    <string name="_0">0</string>
+    <string name="proceed">Proceed</string>
+    <string name="espresso">Espresso</string>
+    <string name="coffee_powder_little_water">Coffee Powder + Little Water</string>
+    <string name="a_shot_of">A shot of pure intense coffee flavour.</string>
+    <string name="_175_cost">175</string>
+    <string name="btn_desc_str">-</string>
+    <string name="_0_cost_each">0</string>
+    <string name="btn_insc_str">+</string>
+    <string name="your_order">Your Order</string>
+    <string name="particulars">PARTICULARS</string>
+    <string name="amt">AMT</string>
+    <string name="qty">QTY</string>
+    <string name="total">Total</string>
+    <string name="tax_10">Tax (10%)</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="thank_you">Thank you for ordering!</string>
+    <string name="new_order">New Order</string>
+</resources>

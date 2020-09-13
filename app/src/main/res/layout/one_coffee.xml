@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <View
+        android:id="@+id/item_divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/listenr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/coffee_image"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:src="@drawable/esp"
+            android:layout_marginEnd="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="210dp"
+                android:text="@string/espresso"
+                android:textColor="#000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="210dp"
+                    android:text="@string/coffee_powder_little_water" />
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/a_shot_of"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_175_cost"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrement"
+                android:layout_width="30sp"
+                android:layout_height="35sp"
+                android:enabled="false"
+                android:text="@string/btn_desc_str" />
+
+            <TextView
+                android:id="@+id/nc"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_0_cost_each"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_width="32sp"
+                android:layout_height="35sp"
+                android:text="@string/btn_insc_str" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
